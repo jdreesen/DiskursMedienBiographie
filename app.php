@@ -25,5 +25,24 @@ $app->get('/', function () use ($app) {
 })
 ->bind('homepage');
 
+$app->get('/{slug}/{page}', function ($slug, $page) use ($app) {
+    // correct page number as we are showing 2 pages every time
+    $page = ($page*2)-1;
+    
+    return "$slug; $page";
+})
+->assert('page', '\d+')
+->value('page', '1')
+->bind('content');
+
+// compat route for old URL layout
+$app->get('/{slug}/page/{page}', function ($slug, $page) use ($app) {
+    return $app->redirect($app['url_generator']->generate('content', array(
+        'slug' => $slug,
+        'page' => $page
+    )));
+})
+->assert('page', '\d+');
+
 // Return application for reuse
 return $app;
