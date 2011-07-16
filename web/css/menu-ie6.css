@@ -1,0 +1,50 @@
+/* png-alpha-fix for IE5.5+ */
+* html a#arbeitskreis {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/arbeitskreis.png', sizingMethod='scale');
+}
+
+* html a#programm {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/programm.png', sizingMethod='scale');
+}
+
+* html a#veranstaltungen {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/veranstaltungen.png', sizingMethod='scale');
+}
+
+* html a#christoph-engemann {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/christoph-engemann.png', sizingMethod='scale');
+}
+
+* html a#lena-correll {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/lena-correll.png', sizingMethod='scale');
+}
+
+* html a#holger-herma {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/holger-herma.png', sizingMethod='scale');
+}
+
+* html a#lisa-pfahl {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/lisa-pfahl.png', sizingMethod='scale');
+}
+
+* html a#lena-schuermann {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/lena-schuermann.png', sizingMethod='scale');
+}
+
+* html a#boris-traue {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/boris-traue.png', sizingMethod='scale');
+}
+
+* html a#credits {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/menu/credits.png', sizingMethod='scale');
+}

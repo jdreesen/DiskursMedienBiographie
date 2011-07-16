@@ -1,10 +1,10 @@
 {% extends "layout.html.twig" %}
-{#
+
 {% block styles %}
-  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu.css') }}" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu' ~ style ~ '.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/menu.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/menu{{style}}.css" type="text/css" media="all" />
 {% endblock %}
-#}
+
 {% block content %}
   <h1 class="ignore">Hauptmenü</h1>
   <a href="{{ path('content', {'slug': 'arbeitskreis'}) }}" id="arbeitskreis" title="Arbeitskreis"><span>Arbeitskreis<br /></span></a>

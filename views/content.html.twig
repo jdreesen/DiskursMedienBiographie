@@ -1,11 +1,11 @@
 {% extends "layout.html.twig" %}
 
 {% block title %}{{ content.title }}{% endblock %}
-{#
+
 {% block styles %}
-  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/content.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/content.css" type="text/css" media="all" />
 {% endblock %}
-#}
+
 {% block content %}
   <div id="bottom-left">
     <div style="float:left;"><a href="{{ path('homepage') }}" class="navigation">&laquo;<span class="ignore"> Zum</span> Menü</a>{% if page-2 > 0 %} | <a href="{{ path('content', {'slug': slug, 'page': nav.previous}) }}"  class="navigation">&laquo; Vorherige Seite</a>{% endif %}</div>

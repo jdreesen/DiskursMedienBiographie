@@ -1,0 +1,99 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	background-color:#eee;
+	color:#000;
+	font-size:13px;
+  font-family:Futura, Verdana, Arial, Helvetica, sans-serif;
+  line-height:19.7px;
+  text-align:center; /* horizontal centering for IE Win quirks */
+}
+
+img {
+	border:0px;
+}
+
+h1 {
+	font-size:20px;
+  margin-bottom:20px;
+}
+
+h1 {
+	font-size:16px;
+  margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+ul {
+	margin-left:18px;
+  margin-bottom:20px;
+  margin-top:-20px;
+}
+
+.small {
+	font-size:10px;
+}
+
+a:link {
+	color:#000; 
+  text-decoration:underline; 
+}
+a:visited {
+	color:#000; 
+  text-decoration:underline;
+}
+a:hover {
+	color:#000; 
+  text-decoration:underline; 
+}
+
+a.navigation:link {
+	color:#000; 
+  text-decoration:none; 
+}
+a.navigation:visited {
+	color:#000; 
+  text-decoration:none;
+}
+a.navigation:hover {
+	color:#000; 
+  text-decoration:underline; 
+}
+
+/* Some special classes */
+.ignore {
+	display:none;
+}
+
+.clearfix:after {
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden;
+}
+.clearfix {
+	display:inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height:1%;
+}
+.clearfix {
+	display:block;
+}
+/* End hide from IE-mac */
+
+/* Safari-Hack: CSS below the '#' will not be interpreted (even not in the same line) */
+body { font-size:14px; }
+body { font-size:13px;# }

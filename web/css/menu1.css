@@ -1,0 +1,10 @@
+#content {
+  background-image:url('../img/background/bg1.jpg');
+}
+
+a#blog {
+  bottom:36px;
+  right:149px;
+  height:160px;
+  width:96px;
+}

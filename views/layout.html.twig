@@ -17,16 +17,15 @@
   <meta name="author" content="Jacob Dreesen" />
   <meta name="copyright" content="Berliner Arbeitskreis: Diskurs, Medien, Biographie" />
   <meta name="publisher" content="Berliner Arbeitskreis: Diskurs, Medien, Biographie" />
-{#
-  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/style.css') }}" type="text/css" media="all" />
-  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/main.css') }}" type="text/css" media="all" />
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/main.css" type="text/css" media="all" />
   {% block styles %}{% endblock %}
-  <style type="text/css">@import("{{ asset('bundles/dmbmain/css/iemac-center.css') }}");</style>
-  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu-ie6.css') }}" media="all" /><![endif]-->
-  <!--[if IE 7]><link type="text/css" rel="stylesheet" href="{{ asset('bundles/dmbmain/css/ie7.css') }}" media="all" /><![endif]-->
-  <script src="{{ asset('bundles/dmbmain/js/externallinks.js') }}" type="text/javascript"></script>
+  <style type="text/css">@import("/css/iemac-center.css");</style>
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="/css/menu-ie6.css" media="all" /><![endif]-->
+  <!--[if IE 7]><link type="text/css" rel="stylesheet" href="/css/ie7.css" media="all" /><![endif]-->
+  <script src="/js/externallinks.js" type="text/javascript"></script>
   {% block scripts %}{% endblock %}
-#}
 </head>
 <body>
   <div id="distance"></div>

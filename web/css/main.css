@@ -1,0 +1,43 @@
+#distance { 
+  width:1px;
+  height:50%;
+  background-color:#eee;
+  margin-bottom:-275px; /* half of container's height */
+  float:left;
+}
+
+#container {
+  margin:0 auto;
+  position:relative; /* puts container in front of distance */
+  text-align:left;
+  height:550px;
+  width:850px;
+  clear:left;
+  background-color:#eee;
+}
+
+#container #ak {
+  position:absolute;
+  top:0px;
+  left:10px;
+  width:51px;
+  height:550px;
+  background:url('../img/berliner_arbeitskreis.jpg');
+}
+
+#container #dmb {
+  position:absolute;
+  top:0px;
+  left:70px;
+  width:45px;
+  height:550px;
+  background:url('../img/diskurs_medien_biographie.jpg');
+}
+
+#container #content {
+  position:absolute;
+  top:0px;
+  left:120px;
+  width:730px;
+  height:550px;
+}

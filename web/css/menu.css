@@ -1,0 +1,144 @@
+/* Menu style */
+#content {
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#content a {
+  position:absolute;
+  text-decoration:none;
+  overflow:hidden;
+}
+
+/* make text-menu invisible */
+#content a span {
+  visibility:hidden; 
+}
+
+/* position the menu-layers */
+a#arbeitskreis {
+  top:85px;
+  left:160px;
+  height:31px;
+  width:152px;
+  background-image:url('../img/menu/arbeitskreis.png');
+}
+
+a#programm {
+  top:175px;
+  left:50px;
+  height:35px;
+  width:165px;
+  background-image:url('../img/menu/programm.png');
+}
+
+a#veranstaltungen {
+  top:470px;
+  left:185px;
+  height:33px;
+  width:166px;
+  background-image:url('../img/menu/veranstaltungen.png');
+  z-index:5;
+}
+
+a#christoph-engemann {
+  top:35px;
+  right:75px;
+  height:24px;
+  width:181px;
+  background-image:url('../img/menu/christoph-engemann.png');
+}
+
+a#lena-correll {
+  top:72px;
+  right:75px;
+  height:26px;
+  width:182px;
+  background-image:url('../img/menu/lena-correll.png');
+}
+
+a#holger-herma {
+  top:110px;
+  right:75px;
+  height:25px;
+  width:183px;
+  background-image:url('../img/menu/holger-herma.png');
+}
+
+a#lisa-pfahl {
+  top:147px;
+  right:75px;
+  height:25px;
+  width:183px;
+  background-image:url('../img/menu/lisa-pfahl.png');
+}
+
+a#lena-schuermann {
+  top:184px;
+  right:75px;
+  height:22px;
+  width:183px;
+  background-image:url('../img/menu/lena-schuermann.png');
+}
+
+a#boris-traue {
+  top:219px;
+  right:75px;
+  height:24px;
+  width:183px;
+  background-image:url('../img/menu/boris-traue.png');
+}
+
+a#credits {
+  bottom:60px;
+  right:60px;
+  height:30px;
+  width:65px;
+  background-image:url('../img/menu/credits.png');
+}
+
+/* set the menu hover images */
+/*a#arbeitskreis:hover {
+  background-position:bottom;
+}
+a#programm:hover {
+  background-position:bottom;
+}
+a#veranstaltungen:hover {
+  background-position:bottom;
+}
+a#christoph-engemann:hover {
+  background-position:bottom;
+}
+a#lena-correll:hover {
+  background-position:bottom;
+}
+a#holger-herma:hover {
+  background-position:bottom;
+}
+a#lisa-pfahl:hover {
+  background-position:bottom;
+}
+a#lena-schuermann:hover {
+  background-position:bottom;
+}
+a#boris-traue:hover {
+  background-position:bottom;
+}
+a#credits:hover {
+  background-position:bottom;
+}*/
+
+/* ie-fix to hide hover images on mouse out */
+/*a#arbeitskreis:hover,
+a#programm:hover,
+a#veranstaltungen:hover,
+a#christoph-engemann:hover,
+a#lena-correll:hover,
+a#holger-herma:hover,
+a#lisa-pfahl:hover,
+a#lena-schuermann:hover,
+a#boris-traue:hover,
+a#credits:hover {
+  border:none;
+}*/

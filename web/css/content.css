@@ -1,0 +1,43 @@
+/* Content style */
+#content {
+  /*border:1px solid #000;*/
+  background-image:url('../img/background/notizbuch-leer.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#content #left {    
+  position:absolute;
+  top:16px;
+  left:25px;
+  width:315px;
+  height:475px;
+
+  overflow:hidden;
+}
+
+#content #right {
+  position:absolute;
+  top:16px;
+  right:35px;
+  width:315px;
+  height:475px;
+
+  overflow:hidden;
+}
+
+#content #bottom-left {    
+  position:absolute;
+  bottom:20px;
+  left:25px;
+  width:315px;
+  height:19px;
+}
+
+#content #bottom-right {
+  position:absolute;
+  bottom:20px;
+  right:35px;
+  width:315px;
+  height:19px;
+}
