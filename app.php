@@ -5,7 +5,8 @@ require_once __DIR__.'/vendor/silex/silex.phar';
 // Create application
 $app = new Silex\Application();
 
-// Add extensions
+
+// ---Add extensions---
 $app->register(new Silex\Extension\DoctrineExtension(), array(
     'db.options'            => array(
         'driver'    => 'pdo_sqlite',
@@ -26,7 +27,8 @@ $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.class_path' => __DIR__.'/vendor/Twig/lib',
 ));
 
-// Define routes
+
+// ---Define routes---
 $app->get('/', function () use ($app) {
     return $app['twig']->render('index.html.twig', array(
         'style' => rand(1, 4),
@@ -63,6 +65,7 @@ $app->get('/{slug}/page/{page}', function ($slug, $page) use ($app) {
     )));
 })
 ->assert('page', '\d+');
+
 
 // Return application for reuse
 return $app;
