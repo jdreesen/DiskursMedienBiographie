@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <title>Diskurs Medien Biographie - {% block title %}Startseite{% endblock %}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="language" content="de" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="verify-v1" content="aA2ALZxBgUVpI5xwOeP3iGKRC4oJ6s6+kabW0bU8CgI=" />
+  <meta name="y_key" content="fea3272547480a5c" />
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="Berliner Arbeitskreis,Diskurs,Medien,Biographie,Traue,Pfahl,Correll,Herma,Schürmann" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Jacob Dreesen" />
+  <meta name="copyright" content="Berliner Arbeitskreis: Diskurs, Medien, Biographie" />
+  <meta name="publisher" content="Berliner Arbeitskreis: Diskurs, Medien, Biographie" />
+{#
+  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/style.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/main.css') }}" type="text/css" media="all" />
+  {% block styles %}{% endblock %}
+  <style type="text/css">@import("{{ asset('bundles/dmbmain/css/iemac-center.css') }}");</style>
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu-ie6.css') }}" media="all" /><![endif]-->
+  <!--[if IE 7]><link type="text/css" rel="stylesheet" href="{{ asset('bundles/dmbmain/css/ie7.css') }}" media="all" /><![endif]-->
+  <script src="{{ asset('bundles/dmbmain/js/externallinks.js') }}" type="text/javascript"></script>
+  {% block scripts %}{% endblock %}
+#}
+</head>
+<body>
+  <div id="distance"></div>
+  <div id="container">
+    <div id="dmb"></div>
+    <div id="ak"></div>
+    <div id="content">{% block content %}{% endblock %}</div>
+  </div>
+</body>
+</html>

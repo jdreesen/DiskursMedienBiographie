@@ -1,0 +1,19 @@
+{% extends "layout.html.twig" %}
+{#
+{% block styles %}
+  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/menu' ~ style ~ '.css') }}" type="text/css" media="all" />
+{% endblock %}
+#}
+{% block content %}
+  <h1 class="ignore">Hauptmenü</h1>
+  <a href="{#{ path('content', {'slug': 'arbeitskreis'}) }#}" id="arbeitskreis" title="Arbeitskreis"><span>Arbeitskreis<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'programm'}) }#}" id="programm" title="Programm"><span>Programm<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'veranstaltungen'}) }#}" id="veranstaltungen" title="Veranstaltungen"><span>Veranstaltungen<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'lena-correll'}) }#}" id="lena-correll" title="Lena Correll"><span>Lena Correll<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'holger-herma'}) }#}" id="holger-herma" title="Holger Herma"><span>Holger Herma<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'lisa-pfahl'}) }#}" id="lisa-pfahl" title="Lisa Pfahl"><span>Lisa Pfahl<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'lena-schurmann'}) }#}" id="lena-schuermann" title="Lena Schürmann"><span>Lena Schürmann<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'boris-traue'}) }#}" id="boris-traue" title="Boris Traue"><span>Boris Traue<br /></span></a>
+  <a href="{#{ path('content', {'slug': 'impressum'}) }#}" id="credits" title="Impressum &amp; Haftungsausschluss"><span>Impressum &amp; Haftungsausschluss</span></a>
+{% endblock %}
