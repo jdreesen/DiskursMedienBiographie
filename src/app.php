@@ -29,7 +29,7 @@ $app->register(new Silex\Extension\SymfonyBridgesExtension(), array(
 $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.path'       => __DIR__.'/views',
     'twig.class_path' => __DIR__.'/../vendor/Twig/lib',
-    'twig.options'    => array('cache' => __DIR__.'/../cache'),
+    'twig.options'    => array('cache' => __DIR__.'/../cache/twig'),
 ));
 
 
