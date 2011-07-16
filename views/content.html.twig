@@ -1,0 +1,20 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}{{ content.title }}{% endblock %}
+{#
+{% block styles %}
+  <link rel="stylesheet" href="{{ asset('bundles/dmbmain/css/content.css') }}" type="text/css" media="all" />
+{% endblock %}
+#}
+{% block content %}
+  <div id="bottom-left">
+    <div style="float:left;"><a href="{{ path('homepage') }}" class="navigation">&laquo;<span class="ignore"> Zum</span> Menü</a>{% if page-2 > 0 %} | <a href="{{ path('content', {'slug': slug, 'page': nav.previous}) }}"  class="navigation">&laquo; Vorherige Seite</a>{% endif %}</div>
+    <div style="float:right;"><br class="ignore" /><span class="small">Seite {{ page }}</span></div>
+  </div>
+  <div id="left">{{ content.pages[page-1].page|raw }}</div>
+  <div id="bottom-right">
+    <div style="float:left;">{% if content.pages|length > page %} <br class="ignore" /><span class="small">Seite {{ page+1 }}</span>{% endif %}</div>
+    <div style="float:right;">{% if content.pages|length > page+1 %} <a href="{{ path('content', {'slug': slug, 'page': nav.next}) }}" class="navigation">Nächste Seite &raquo;</a>{% endif %}</div>
+  </div>
+  <div id="right">{% if content.pages|length > page %}{{ content.pages[page].page|raw }}{% endif %}</div>
+{% endblock %}
