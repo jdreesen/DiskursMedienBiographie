@@ -75,14 +75,24 @@ $app->get('/{slug}/page/{page}', function ($slug, $page) use ($app) {
 
 
 // ---Error handler---
-$app->error(function (\Exception $e) {
+$app->error(function (\Exception $e) use ($app) {
     if ($e instanceof NotFoundHttpException) {
-        return new Response('Die gewünschte Seite konnte leider nicht gefunden werden.', 404);
+        $message = 'Die gewünschte Seite konnte leider nicht gefunden werden.';
+    } else {
+        $message = 'Es tut uns leid, hier ist gerade etwas furchtbar schiefgelaufen.';
     }
-
+    
     $code = ($e instanceof HttpException) ? $e->getStatusCode() : 500;
-    return new Response('Es tut uns leid, hier ist gerade etwas furchtbar schiefgelaufen.', $code);
+
+    return new Response(
+        $app['twig']->render('error.html.twig', array(
+            'message' => $message,
+            'code'    => $code,
+        )),
+        $code
+    );
 });
+
 
 // Return application for reuse
 return $app;

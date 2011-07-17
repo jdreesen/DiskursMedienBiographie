@@ -1,0 +1,17 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Fehler{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/css/content.css" type="text/css" media="all" />
+{% endblock %}
+
+{% block content %}
+  <div id="bottom-left">
+    <div style="float:left;"><a href="{{ path('homepage') }}" class="navigation">&laquo;<span class="ignore"> Zum</span> Menü</a></div>
+    <div style="float:right;"><br class="ignore" /><span class="small">Seite 1</span></div>
+  </div>
+  <div id="left"><h1>Fehler {{ code }}</h1><p>{{ message }}</p></div>
+  <div id="bottom-right"></div>
+  <div id="right"></div>
+{% endblock %}
